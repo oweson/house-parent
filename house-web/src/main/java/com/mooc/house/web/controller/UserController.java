@@ -71,14 +71,17 @@ public class UserController {
      */
     @RequestMapping("/accounts/signin")
     public String signin(HttpServletRequest req) {
+        // req方便操作session
         String username = req.getParameter("username");
         String password = req.getParameter("password");
+        // 登陆页面的请求；name和password可能为空
         String target = req.getParameter("target");
         if (username == null || password == null) {
             req.setAttribute("target", target);
             return "/user/accounts/signin";
         }
         User user = userService.auth(username, password);
+        // 输入信息回显，错误不让用户重新填写！提示信息
         if (user == null) {
             return "redirect:/accounts/signin?" + "target=" + target + "&username=" + username + "&"
                     + ResultMsg.errorMsg("用户名或密码错误").asUrlParams();

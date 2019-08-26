@@ -73,9 +73,11 @@ public class UserService {
      * @return
      */
     public User auth(String username, String password) {
+        // 构造查询对象
         User user = new User();
         user.setEmail(username);
         user.setPasswd(HashUtils.encryPassword(password));
+        // 被激活用户
         user.setEnable(1);
         List<User> list = getUserByQuery(user);
         if (!list.isEmpty()) {
@@ -84,10 +86,13 @@ public class UserService {
         return null;
     }
 
-
+    /**
+     * 查询是一个列表，代码复用，用户验证就取出第一个
+     */
     public List<User> getUserByQuery(User user) {
         List<User> list = userMapper.selectUsersByQuery(user);
         list.forEach(u -> {
+            // 取出头像地址进行处理
             u.setAvatar(imgPrefix + u.getAvatar());
         });
         return list;
