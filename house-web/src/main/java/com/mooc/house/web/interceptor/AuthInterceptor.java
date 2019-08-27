@@ -31,8 +31,10 @@ public class AuthInterceptor implements HandlerInterceptor{
 	    if (reqUri.startsWith("/static") || reqUri.startsWith("/error") ) {
 			return true;
 		}
+	    // true 没有session自动创建，false不会
 	    HttpSession session = request.getSession(true);
 	    User user =  (User)session.getAttribute(CommonConstants.USER_ATTRIBUTE);
+	    // 放入threadLocal
 	    if (user != null) {
 			UserContext.setUser(user);
 		}

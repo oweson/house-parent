@@ -110,6 +110,7 @@ public class UserController {
 
     /**
      * 1.能够提供页面信息 2.更新用户信息
+     * 具备两个功能，判断是页面的请求还是修改个人信息的请求
      *
      * @param updateUser
      * @param model
@@ -117,19 +118,23 @@ public class UserController {
      */
     @RequestMapping("accounts/profile")
     public String profile(HttpServletRequest req, User updateUser, ModelMap model) {
+        // email不可修改的，隐藏的input填充email,每次更新都会传递过来，个人页面的请求一定为空
         if (updateUser.getEmail() == null) {
             return "/user/accounts/profile";
         }
+        // email构建了唯一索引
         userService.updateUser(updateUser, updateUser.getEmail());
+        // 查询对象
         User query = new User();
         query.setEmail(updateUser.getEmail());
         List<User> users = userService.getUserByQuery(query);
+        // 重置session
         req.getSession(true).setAttribute(CommonConstants.USER_ATTRIBUTE, users.get(0));
         return "redirect:/accounts/profile?" + ResultMsg.successMsg("更新成功").asUrlParams();
     }
 
     /**
-     * 修改密码操作
+     * 2 修改密码操作
      *
      * @param email
      * @param password

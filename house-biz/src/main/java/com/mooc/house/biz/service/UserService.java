@@ -100,6 +100,7 @@ public class UserService {
 
     public void updateUser(User updateUser, String email) {
         updateUser.setEmail(email);
+        // 设置更新时间
         BeanHelper.onUpdate(updateUser);
         userMapper.update(updateUser);
     }

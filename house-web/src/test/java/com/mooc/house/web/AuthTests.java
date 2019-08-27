@@ -12,7 +12,10 @@ import com.mooc.house.common.model.User;
 
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment=WebEnvironment.DEFINED_PORT)
+//@SpringBootTest(webEnvironment=WebEnvironment.DEFINED_PORT)
+@SpringBootTest(webEnvironment=WebEnvironment.RANDOM_PORT)
+
+// 随机的端口启动和固定的端口启动
 public class AuthTests {
 
 	@Autowired
