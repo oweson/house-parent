@@ -15,28 +15,28 @@ import com.mooc.house.common.page.PageParams;
 @Mapper
 public interface HouseMapper {
 
-    public List<House>  selectPageHouses(@Param("house")House house,@Param("pageParams")PageParams pageParams);
-    
-    public Long selectPageCount(@Param("house") House query);
-	
-	public int insert(User account);
+    List<House> selectPageHouses(@Param("house") House house, @Param("pageParams") PageParams pageParams);
 
-	public List<Community> selectCommunity(Community community);
+    Long selectPageCount(@Param("house") House query);
 
-	public int insert(House house);
+    int insert(User account);
 
-	public HouseUser selectHouseUser(@Param("userId")Long userId,@Param("id") Long houseId,@Param("type") Integer integer);
-	
-	public HouseUser selectSaleHouseUser(@Param("id") Long houseId);
+    List<Community> selectCommunity(Community community);
 
-	public int insertHouseUser(HouseUser houseUser);
+    int insert(House house);
 
-	public int insertUserMsg(UserMsg userMsg);
+    HouseUser selectHouseUser(@Param("userId") Long userId, @Param("id") Long houseId, @Param("type") Integer integer);
 
-	public int updateHouse(House updateHouse);
-	
-	public  int downHouse(Long id);
+    HouseUser selectSaleHouseUser(@Param("id") Long houseId);
 
-	public int deleteHouseUser(@Param("id")Long id,@Param("userId") Long userId,@Param("type") Integer value);
-	
+    int insertHouseUser(HouseUser houseUser);
+
+    int insertUserMsg(UserMsg userMsg);
+
+    int updateHouse(House updateHouse);
+
+    int downHouse(Long id);
+
+    int deleteHouseUser(@Param("id") Long id, @Param("userId") Long userId, @Param("type") Integer value);
+
 }
