@@ -12,20 +12,25 @@ import com.mooc.house.common.model.House;
 
 @Controller
 public class HomepageController {
-  
-  @Autowired
-  private RecommendService recommendService;
-  
-  @RequestMapping("index")
-  public String accountsRegister(ModelMap modelMap){
-    List<House> houses =  recommendService.getLastest();
-    modelMap.put("recomHouses", houses);
-    return "/homepage/index";
-  }
-  
 
-  @RequestMapping("")
-  public String index(ModelMap modelMap){
-    return "redirect:/index";
-  }
+    @Autowired
+    private RecommendService recommendService;
+
+    /**
+     * 1 首页房源
+     */
+    @RequestMapping("index")
+    public String accountsRegister(ModelMap modelMap) {
+        List<House> houses = recommendService.getLastest();
+        modelMap.put("recomHouses", houses);
+        return "/homepage/index";
+    }
+
+    /**
+     * 2 跳转首页
+     */
+    @RequestMapping("")
+    public String index(ModelMap modelMap) {
+        return "redirect:/index";
+    }
 }

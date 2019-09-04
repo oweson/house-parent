@@ -18,62 +18,78 @@ import redis.clients.jedis.Jedis;
 
 @Service
 public class RecommendService {
+    // 1 热门房产在redis中的key
+    private static final String HOT_HOUSE_KEY = "hot_house";
 
-  private static final String HOT_HOUSE_KEY = "hot_house";
+    private static final Logger logger = LoggerFactory.getLogger(RecommendService.class);
 
-  private static final Logger logger = LoggerFactory.getLogger(RecommendService.class);
+    @Autowired
+    private HouseService houseService;
 
-  @Autowired
-  private HouseService houseService;
+    /**
+     * 单击增加访问量，热度存储
+     */
+    public void increase(Long id) {
+        try {
+            Jedis jedis = new Jedis("127.0.0.1");
+            // 每个id对应一个分数
+            jedis.zincrby(HOT_HOUSE_KEY, 1.0D, id + "");
+            jedis.zremrangeByRank(HOT_HOUSE_KEY, 0, -11);
+            // 0代表第一个元素,-1代表最后一个元素，保留热度由低到高末尾10个房产
+            jedis.close();
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+        }
 
-  public void increase(Long id) {
-    try {
-      Jedis jedis = new Jedis("127.0.0.1");
-      jedis.zincrby(HOT_HOUSE_KEY, 1.0D, id + "");
-      jedis.zremrangeByRank(HOT_HOUSE_KEY, 0, -11);
-      // 0代表第一个元素,-1代表最后一个元素，保留热度由低到高末尾10个房产
-      jedis.close();
-    } catch (Exception e) {
-      logger.error(e.getMessage(),e);
-    }
-   
-  }
-
-  public List<Long> getHot() {
-    try {
-      Jedis jedis = new Jedis("127.0.0.1");
-      Set<String> idSet = jedis.zrevrange(HOT_HOUSE_KEY, 0, -1);
-      jedis.close();
-      List<Long> ids = idSet.stream().map(Long::parseLong).collect(Collectors.toList());
-      return ids;
-    } catch (Exception e) {
-      logger.error(e.getMessage(), e);
-      //有同学反应在未安装redis时会报500,在这里做下兼容,
-      return Lists.newArrayList();
     }
 
-  }
+    /**
+     * 获取热门的房产id
+     */
+    public List<Long> getHot() {
+        try {
+            Jedis jedis = new Jedis("127.0.0.1");
+            // 拿到所有的id,从第一个到最后一个，zrange获得的是从低到高的排序，下面的是从高到低的；
+            Set<String> idSet = jedis.zrevrange(HOT_HOUSE_KEY, 0, -1);
+            jedis.close();
+            // string转化为long,
+            List<Long> ids = idSet.stream().map(Long::parseLong).collect(Collectors.toList());
+            return ids;
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+            //有同学反应在未安装redis时会报500,在这里做下兼容,
+            return Lists.newArrayList();
+        }
 
-  public List<House> getHotHouse(Integer size) {
-    House query = new House();
-    List<Long> list = getHot();
-    list = list.subList(0, Math.min(list.size(), size));
-    if (list.isEmpty()) {
-      return Lists.newArrayList();
     }
-    query.setIds(list);
-    final List<Long> order = list;
-    List<House> houses = houseService.queryAndSetImg(query, PageParams.build(size, 1));
-    Ordering<House> houseSort = Ordering.natural().onResultOf(hs -> {
-      return order.indexOf(hs.getId());
-    });
-    return houseSort.sortedCopy(houses);
-  }
 
-  public List<House> getLastest() {
-    House query = new House();
-    query.setSort("create_time");
-    List<House> houses = houseService.queryAndSetImg(query, new PageParams(8, 1));
-    return houses;
-  }
+    /**
+     * 查询个数一般是三个
+     */
+    public List<House> getHotHouse(Integer size) {
+        House query = new House();
+        List<Long> list = getHot();
+        // 下面的代码。redis少的时候就显示少的，多个时候就显示3个，截取最大三个
+        list = list.subList(0, Math.min(list.size(), size));
+        if (list.isEmpty()) {
+            // 为空就不查询了，
+            return Lists.newArrayList();
+        }
+        query.setIds(list);
+        final List<Long> order = list;
+        // guava的排序函数，0,1排在第一位 todo???
+        List<House> houses = houseService.queryAndSetImg(query, PageParams.build(size, 1));
+        Ordering<House> houseSort = Ordering.natural().onResultOf(hs -> {
+            return order.indexOf(hs.getId());
+        });
+        // 拷贝全新的list
+        return houseSort.sortedCopy(houses);
+    }
+
+    public List<House> getLastest() {
+        House query = new House();
+        query.setSort("create_time");
+        List<House> houses = houseService.queryAndSetImg(query, new PageParams(8, 1));
+        return houses;
+    }
 }

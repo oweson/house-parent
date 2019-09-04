@@ -9,13 +9,13 @@ import com.mooc.house.common.model.User;
 @Mapper
 public interface UserMapper {
 
-	public List<User>  selectUsers();
+	 List<User>  selectUsers();
 	
-	public int insert(User account);
+	 int insert(User account);
 
-	public int delete(String email);
+	 int delete(String email);
 
-	public int update(User updateUser);
+	 int update(User updateUser);
 
-	public List<User> selectUsersByQuery(User user);
+	 List<User> selectUsersByQuery(User user);
 }

@@ -14,7 +14,6 @@ public class Comment {
     private Integer blogId;
     private Integer type;
     private Long userId;
-
     private String userName;
     private String avatar;
 

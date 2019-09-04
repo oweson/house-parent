@@ -61,6 +61,7 @@ public class HouseService {
                 query.setCommunityId(communities.get(0).getId());
             }
         }
+        // 返回房屋集合
         houses = queryAndSetImg(query, pageParams);
         //添加图片服务器地址前缀
         Long count = houseMapper.selectPageCount(query);
@@ -85,7 +86,7 @@ public class HouseService {
     }
 
     /**
-     * 添加房屋图片
+     * 添加房屋图片 1 or many
      * 添加户型图片
      * 插入房产信息
      * 绑定用户到房产的关系
@@ -94,21 +95,26 @@ public class HouseService {
      * @param user
      */
     public void addHouse(House house, User user) {
+        // 图片是数组，转化字符串进行存储，逗号分割，因为数据库只存储路径，不存储文件和数据
         if (CollectionUtils.isNotEmpty(house.getHouseFiles())) {
             String images = Joiner.on(",").join(fileService.getImgPaths(house.getHouseFiles()));
             house.setImages(images);
         }
+        // 户型图
         if (CollectionUtils.isNotEmpty(house.getFloorPlanFiles())) {
             String images = Joiner.on(",").join(fileService.getImgPaths(house.getFloorPlanFiles()));
             house.setFloorPlan(images);
         }
         BeanHelper.onInsert(house);
         houseMapper.insert(house);
+        // 绑定用户和房产的关系,false是添加房产，true是收藏房产
+        // houseId是插入之后才有的，主键要设置自增返回主键！！！
         bindUser2House(house.getId(), user.getId(), false);
     }
 
     public void bindUser2House(Long houseId, Long userId, boolean collect) {
         HouseUser existhouseUser = houseMapper.selectHouseUser(userId, houseId, collect ? HouseUserType.BOOKMARK.value : HouseUserType.SALE.value);
+        // 对应关系已经存在就不操作了；
         if (existhouseUser != null) {
             return;
         }
@@ -116,8 +122,11 @@ public class HouseService {
         houseUser.setHouseId(houseId);
         houseUser.setUserId(userId);
         houseUser.setType(collect ? HouseUserType.BOOKMARK.value : HouseUserType.SALE.value);
+        // 插入之前设置默一些认值
         BeanHelper.setDefaultProp(houseUser, HouseUser.class);
+        // 修改创建时间
         BeanHelper.onInsert(houseUser);
+        // 入库
         houseMapper.insertHouseUser(houseUser);
     }
 
@@ -137,8 +146,10 @@ public class HouseService {
     }
 
     public void addUserMsg(UserMsg userMsg) {
+        // 设置默认值。如Integer，字符串为空等
         BeanHelper.onInsert(userMsg);
         houseMapper.insertUserMsg(userMsg);
+        // 找到经纪人对象；
         User agent = agencyService.getAgentDeail(userMsg.getAgentId());
         mailService.sendMail("来自用户" + userMsg.getEmail() + "的留言", userMsg.getMsg(), agent.getEmail());
     }
@@ -146,6 +157,7 @@ public class HouseService {
     public void updateRating(Long id, Double rating) {
         House house = queryOneHouse(id);
         Double oldRating = house.getRating();
+        // 防止其他的用户不用ajax,非法请求，大于5就是非法的
         Double newRating = oldRating.equals(0D) ? rating : Math.min((oldRating + rating) / 2, 5);
         House updateHouse = new House();
         updateHouse.setId(id);

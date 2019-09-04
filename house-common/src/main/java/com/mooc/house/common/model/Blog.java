@@ -14,7 +14,6 @@ public class Blog {
   private String  title;
   private Date    createTime;
   private String  digest;
-  
   private List<String> tagList = Lists.newArrayList();
   
 

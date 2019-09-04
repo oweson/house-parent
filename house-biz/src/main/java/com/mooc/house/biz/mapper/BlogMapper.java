@@ -10,9 +10,14 @@ import com.mooc.house.common.page.PageParams;
 
 @Mapper
 public interface BlogMapper {
+    /**
+     * 1 查询博客
+     */
+    List<Blog> selectBlog(@Param("blog") Blog query, @Param("pageParams") PageParams params);
 
-  public List<Blog> selectBlog(@Param("blog")Blog query, @Param("pageParams")PageParams params);
-
-  public Long selectBlogCount(Blog query);
+    /**
+     * 2 统计博客的数量
+     */
+    Long selectBlogCount(Blog query);
 
 }

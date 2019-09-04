@@ -67,7 +67,7 @@ public class UserController {
     // ----------------------------登录流程------------------------------------
 
     /**
-     * 登录接口
+     * 1 登录接口
      */
     @RequestMapping("/accounts/signin")
     public String signin(HttpServletRequest req) {
@@ -88,13 +88,12 @@ public class UserController {
         } else {
             HttpSession session = req.getSession(true);
             session.setAttribute(CommonConstants.USER_ATTRIBUTE, user);
-            // session.setAttribute(CommonConstants.PLAIN_USER_ATTRIBUTE, user);
             return StringUtils.isNoneBlank(target) ? "redirect:" + target : "redirect:/index";
         }
     }
 
     /**
-     * 登出操作
+     * 2 登出操作
      *
      * @param request
      * @return
@@ -158,7 +157,7 @@ public class UserController {
 
 
     /**
-     * 忘记密码
+     * 3 忘记密码
      *
      * @param username
      * @param modelMap
@@ -174,6 +173,9 @@ public class UserController {
         return "/user/accounts/remember";
     }
 
+    /**
+     * 4 重置密码
+     */
     @RequestMapping("accounts/reset")
     public String reset(String key, ModelMap modelMap) {
         String email = userService.getResetEmail(key);

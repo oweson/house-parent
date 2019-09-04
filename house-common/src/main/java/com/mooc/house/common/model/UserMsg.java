@@ -11,7 +11,9 @@ public class UserMsg {
     private String msg;
     private Long userId;
     private Date createTime;
+    // 经纪人id
     private Long agentId;
+    // 房屋id
     private Long houseId;
     private String email;
 
