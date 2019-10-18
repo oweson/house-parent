@@ -6,7 +6,9 @@ import java.util.Date;
 
 @Data
 public class Comment {
-
+    /**
+     * bigint在数据库对应long
+     */
     private Long id;
     private String content;
     private Long houseId;

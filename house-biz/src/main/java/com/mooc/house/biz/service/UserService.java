@@ -73,11 +73,11 @@ public class UserService {
      * @return
      */
     public User auth(String username, String password) {
-        // 构造查询对象
+        // 1 构造查询对象
         User user = new User();
         user.setEmail(username);
         user.setPasswd(HashUtils.encryPassword(password));
-        // 被激活用户
+        // 2 被激活用户
         user.setEnable(1);
         List<User> list = getUserByQuery(user);
         if (!list.isEmpty()) {

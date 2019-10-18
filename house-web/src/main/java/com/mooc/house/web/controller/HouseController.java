@@ -53,13 +53,13 @@ public class HouseController {
      */
     @RequestMapping("/house/list")
     public String houseList(Integer pageSize, Integer pageNum, House query, ModelMap modelMap) {
-        // 房屋搜索
+        // 1 房屋搜索
         PageData<House> ps = houseService.queryHouse(query, PageParams.build(pageSize, pageNum));
-        // 热门房源，通过redis做计数器
+        // 2 热门房源，通过redis做计数器
         List<House> hotHouses = recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
         modelMap.put("recomHouses", hotHouses);
         modelMap.put("ps", ps);
-        // 查询对象一并返回前端；
+        // 3 查询对象一并返回前端；
         modelMap.put("vo", query);
         return "house/listing";
     }

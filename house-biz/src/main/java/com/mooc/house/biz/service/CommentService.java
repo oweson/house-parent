@@ -36,7 +36,9 @@ public class CommentService {
     comment.setContent(content);
     comment.setUserId(userId);
     comment.setType(type);
+    // 1 更新时间
     BeanHelper.onInsert(comment);
+    // 2 设置默认值
     BeanHelper.setDefaultProp(comment, Comment.class);
     commentMapper.insert(comment);
   }

@@ -51,6 +51,7 @@ public class AgencyController {
     @RequestMapping("/agency/agentList")
     public String agentList(Integer pageSize, Integer pageNum, ModelMap modelMap) {
         if (pageSize == null) {
+            // 默认值
             pageSize = 6;
         }
         PageData<User> ps = agencyService.getAllAgent(PageParams.build(pageSize, pageNum));
@@ -70,6 +71,7 @@ public class AgencyController {
         // 经纪人下的房产信息
         House query = new House();
         query.setUserId(id);
+        // todo?
         query.setBookmarked(false);
         PageData<House> bindHouse = houseService.queryHouse(query, new PageParams(3, 1));
         if (bindHouse != null) {
@@ -81,6 +83,9 @@ public class AgencyController {
         return "/user/agent/agentDetail";
     }
 
+    /**
+     * 4 留言给经纪人
+     */
     @RequestMapping("/agency/agentMsg")
     public String agentMsg(Long id, String msg, String name, String email, ModelMap modelMap) {
         User user = agencyService.getAgentDeail(id);
@@ -97,20 +102,27 @@ public class AgencyController {
         return "/user/agency/agencyDetail";
     }
 
-
+    /**
+     * 6 经纪机构列表
+     */
     @RequestMapping("agency/list")
     public String agencyList(ModelMap modelMap) {
         List<Agency> agencies = agencyService.getAllAgency();
+        // 没分页？？？
         List<House> houses = recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
         modelMap.put("recomHouses", houses);
         modelMap.put("agencyList", agencies);
         return "/user/agency/agencyList";
     }
 
+    /**
+     * 7 添加经纪机构
+     */
     @RequestMapping("agency/submit")
     public String agencySubmit(Agency agency) {
         User user = UserContext.getUser();
-        if (user == null || !Objects.equal(user.getEmail(), "spring_boot@163.com")) {//只有超级管理员可以添加,拟定spring_boot@163.com为超管
+        if (user == null || !Objects.equal(user.getEmail(), "spring_boot@163.com")) {
+            //只有超级管理员可以添加,拟定spring_boot@163.com为超管
             return "redirect:/accounts/signin?" + ResultMsg.successMsg("请先登录").asUrlParams();
         }
         agencyService.add(agency);

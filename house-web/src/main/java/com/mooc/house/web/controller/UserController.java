@@ -38,10 +38,11 @@ public class UserController {
     @RequestMapping("accounts/register")
     public String accountsRegister(User account, ModelMap modelMap) {
         if (account == null || account.getName() == null) {
+            // 1 经纪机构列表
             modelMap.put("agencyList", agencyService.getAllAgency());
             return "/user/accounts/register";
         }
-        // 用户验证
+        // 2 用户验证
         ResultMsg resultMsg = UserHelper.validate(account);
         if (resultMsg.isSuccess() && userService.addAccount(account)) {
             modelMap.put("email", account.getEmail());
@@ -71,21 +72,24 @@ public class UserController {
      */
     @RequestMapping("/accounts/signin")
     public String signin(HttpServletRequest req) {
-        // req方便操作session
+        // 1 req方便操作session
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        // 登陆页面的请求；name和password可能为空
+        // 2 登陆页面的请求；name和password可能为空
+        // target todo ???
         String target = req.getParameter("target");
         if (username == null || password == null) {
             req.setAttribute("target", target);
             return "/user/accounts/signin";
         }
         User user = userService.auth(username, password);
-        // 输入信息回显，错误不让用户重新填写！提示信息
+        // 4 输入信息回显，错误不让用户重新填写！提示信息
         if (user == null) {
+            // 借助guava把对象转化为url参数
             return "redirect:/accounts/signin?" + "target=" + target + "&username=" + username + "&"
                     + ResultMsg.errorMsg("用户名或密码错误").asUrlParams();
         } else {
+            // 5 成功跳转首页
             HttpSession session = req.getSession(true);
             session.setAttribute(CommonConstants.USER_ATTRIBUTE, user);
             return StringUtils.isNoneBlank(target) ? "redirect:" + target : "redirect:/index";
@@ -117,17 +121,17 @@ public class UserController {
      */
     @RequestMapping("accounts/profile")
     public String profile(HttpServletRequest req, User updateUser, ModelMap model) {
-        // email不可修改的，隐藏的input填充email,每次更新都会传递过来，个人页面的请求一定为空
+        // 1 email不可修改的，隐藏的input填充email,每次更新都会传递过来，个人页面的请求一定为空
         if (updateUser.getEmail() == null) {
             return "/user/accounts/profile";
         }
-        // email构建了唯一索引
+        // 2 email构建了唯一索引
         userService.updateUser(updateUser, updateUser.getEmail());
-        // 查询对象
+        // 3 查询对象
         User query = new User();
         query.setEmail(updateUser.getEmail());
         List<User> users = userService.getUserByQuery(query);
-        // 重置session
+        // 4 重置session
         req.getSession(true).setAttribute(CommonConstants.USER_ATTRIBUTE, users.get(0));
         return "redirect:/accounts/profile?" + ResultMsg.successMsg("更新成功").asUrlParams();
     }

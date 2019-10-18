@@ -68,6 +68,7 @@ public class MailService {
 
     /**
      * 异步发送邮件；
+     *
      * @Async:会吧这个任务放到线程池里面
      */
     @Async
@@ -115,7 +116,7 @@ public class MailService {
     }
 
     public boolean enable(String key) {
-        // 从缓存拿到key对应的值，是否存在且正确！
+        // 1 从缓存拿到key对应的值，是否存在且正确！
         String email = registerCache.getIfPresent(key);
         if (StringUtils.isBlank(email)) {
             return false;
@@ -123,8 +124,9 @@ public class MailService {
         User updateUser = new User();
         updateUser.setEmail(email);
         updateUser.setEnable(1);
+        // 2 更改用户状态
         userMapper.update(updateUser);
-        // 让缓存失效
+        // 3 让缓存失效
         registerCache.invalidate(key);
         return true;
     }
