@@ -37,8 +37,9 @@ public class UserController {
      */
     @RequestMapping("accounts/register")
     public String accountsRegister(User account, ModelMap modelMap) {
+        // name必填的；
         if (account == null || account.getName() == null) {
-            // 1 经纪机构列表
+            // 1 经纪机构列表；注册选择；
             modelMap.put("agencyList", agencyService.getAllAgency());
             return "/user/accounts/register";
         }
@@ -149,6 +150,7 @@ public class UserController {
     @RequestMapping("accounts/changePassword")
     public String changePassword(String email, String password, String newPassword,
                                  String confirmPassword, ModelMap mode) {
+        // 1 先校验旧的密码
         User user = userService.auth(email, password);
         if (user == null || !confirmPassword.equals(newPassword)) {
             return "redirct:/accounts/profile?" + ResultMsg.errorMsg("密码错误").asUrlParams();
@@ -183,6 +185,7 @@ public class UserController {
     @RequestMapping("accounts/reset")
     public String reset(String key, ModelMap modelMap) {
         String email = userService.getResetEmail(key);
+        // 找不到了，过期或者不对；
         if (StringUtils.isBlank(email)) {
             return "redirect:/accounts/signin?" + ResultMsg.errorMsg("重置链接已过期").asUrlParams();
         }

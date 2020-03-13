@@ -67,7 +67,7 @@ public class MailService {
     private final Cache<String, String> resetCache = CacheBuilder.newBuilder().maximumSize(100).expireAfterAccess(15, TimeUnit.MINUTES).build();
 
     /**
-     * 异步发送邮件；
+     * 2 异步发送邮件；
      *
      * @Async:会吧这个任务放到线程池里面
      */
@@ -95,7 +95,7 @@ public class MailService {
     }
 
     /**
-     * 发送重置密码邮件
+     * 3 发送重置密码邮件
      *
      * @param email
      */

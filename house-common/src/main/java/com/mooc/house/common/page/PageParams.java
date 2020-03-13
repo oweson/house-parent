@@ -5,7 +5,6 @@ import lombok.Data;
 @Data
 public class PageParams {
 	private static final Integer PAGE_SIZE = 5;
-
 	private Integer pageSize;
 	private Integer pageNum;
 	private Integer offset;

@@ -60,7 +60,8 @@ public class House {
 
     private List<Long> ids;
 
-    private String sort = "time_desc";//price_desc,price_asc,time_desc
+    private String sort = "time_desc";
+    //price_desc,price_asc,time_desc
 
     public Long getId() {
         return id;

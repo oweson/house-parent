@@ -131,8 +131,7 @@ public class HouseService {
     }
 
     public HouseUser getHouseUser(Long houseId) {
-        HouseUser houseUser = houseMapper.selectSaleHouseUser(houseId);
-        return houseUser;
+        return houseMapper.selectSaleHouseUser(houseId);
     }
 
     public House queryOneHouse(Long id) {

@@ -57,7 +57,9 @@ public class AgencyService {
 
     public PageData<User> getAllAgent(PageParams pageParams) {
         List<User> agents = agencyMapper.selectAgent(new User(), pageParams);
+        // 处理图片
         setImg(agents);
+        // 查询经纪人的总数
         Long count = agencyMapper.selectAgentCount(new User());
         return PageData.buildPage(agents, count, pageParams.getPageSize(), pageParams.getPageNum());
     }

@@ -55,6 +55,7 @@ public class AgencyController {
             pageSize = 6;
         }
         PageData<User> ps = agencyService.getAllAgent(PageParams.build(pageSize, pageNum));
+        // 推荐热门房产
         List<House> houses = recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
         modelMap.put("recomHouses", houses);
         modelMap.put("ps", ps);
@@ -67,18 +68,24 @@ public class AgencyController {
     @RequestMapping("/agency/agentDetail")
     public String agentDetail(Long id, ModelMap modelMap) {
         User user = agencyService.getAgentDeail(id);
+        // 热门的房产
         List<House> houses = recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
         // 经纪人下的房产信息
         House query = new House();
         query.setUserId(id);
         // todo?
         query.setBookmarked(false);
+        // 查询并分页
         PageData<House> bindHouse = houseService.queryHouse(query, new PageParams(3, 1));
+        // 经纪人旗下的房产
         if (bindHouse != null) {
             modelMap.put("bindHouses", bindHouse.getList());
         }
+        // 推荐热门的房产
         modelMap.put("recomHouses", houses);
+        // 经纪人
         modelMap.put("agent", user);
+        // 经纪机构的名字
         modelMap.put("agencyName", user.getAgencyName());
         return "/user/agent/agentDetail";
     }
@@ -93,6 +100,9 @@ public class AgencyController {
         return "redirect:/agency/agentDetail?id=" + id + "&" + ResultMsg.successMsg("留言成功").asUrlParams();
     }
 
+    /**
+     * 5 经纪机构详情
+     */
     @RequestMapping("/agency/agencyDetail")
     public String agencyDetail(Integer id, ModelMap modelMap) {
         Agency agency = agencyService.getAgency(id);
