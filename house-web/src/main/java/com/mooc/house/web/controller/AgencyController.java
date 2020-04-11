@@ -1,12 +1,5 @@
 package com.mooc.house.web.controller;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import com.google.common.base.Objects;
 import com.mooc.house.biz.service.AgencyService;
 import com.mooc.house.biz.service.HouseService;
@@ -20,6 +13,12 @@ import com.mooc.house.common.page.PageData;
 import com.mooc.house.common.page.PageParams;
 import com.mooc.house.common.result.ResultMsg;
 import com.mooc.house.web.interceptor.UserContext;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.List;
 
 @Controller
 public class AgencyController {

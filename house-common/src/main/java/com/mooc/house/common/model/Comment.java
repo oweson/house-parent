@@ -1,5 +1,6 @@
 package com.mooc.house.common.model;
 
+
 import lombok.Data;
 
 import java.util.Date;
