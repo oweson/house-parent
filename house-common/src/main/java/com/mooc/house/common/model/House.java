@@ -38,7 +38,6 @@ public class House {
 
     private List<String> imageList = Lists.newArrayList();
 
-
     private List<String> floorPlanList = Lists.newArrayList();
     private List<String> featureList = Lists.newArrayList();
 

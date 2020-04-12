@@ -8,7 +8,7 @@ import com.mooc1.house.autoconfig.EnableHttpClient;
 
 @SpringBootApplication
 @EnableHttpClient
-/** 异步框架，开启，邮件*/
+/*异步框架，开启，邮件*/
 @EnableAsync
 public class HouseApplication {
 
