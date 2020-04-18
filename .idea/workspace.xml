@@ -6,31 +6,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/target/surefire-reports/TEST-com.mooc.house.biz.AppTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/target/surefire-reports/com.mooc.house.biz.AppTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/mooc/house/common/model/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/mooc/house/common/model/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/target/surefire-reports/TEST-com.mooc.house.common.AppTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/target/surefire-reports/com.mooc.house.common.AppTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/HouseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/HouseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-biz/src/main/resources/mapper/house.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/resources/mapper/house.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-common/src/test/java/com/mooc/house/util/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/test/java/com/mooc/house/util/Fish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/AgencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/AgencyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/house-web/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/target/house-web-1.0.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +65,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -104,7 +85,7 @@
       <recent name="E:\BaiduNetdiskDownload\A-2019\微服务--房产销售\source-code\housev1.0\doc" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.HouseApplication">
+  <component name="RunManager" selected="Application.Demo1Update">
     <configuration name="Demo1Update" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mooc.house.util.Demo1Update" />
       <module name="house-common" />
@@ -191,7 +172,8 @@
       <workItem from="1586273997503" duration="325000" />
       <workItem from="1586304184632" duration="46000" />
       <workItem from="1586619169625" duration="1399000" />
-      <workItem from="1586680784055" duration="1932000" />
+      <workItem from="1586680784055" duration="2173000" />
+      <workItem from="1587183687494" duration="3225000" />
     </task>
     <servers />
   </component>
@@ -207,54 +189,54 @@
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="555" y="171" key="FileChooserDialogImpl/0.0.1549.831@0.0.1549.831" timestamp="1586619253814" />
-    <state width="1506" height="87" key="GridCell.Tab.0.bottom" timestamp="1586682271644">
+    <state width="1506" height="67" key="GridCell.Tab.0.bottom" timestamp="1587192505922">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="87" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1586682271644" />
-    <state width="1506" height="87" key="GridCell.Tab.0.center" timestamp="1586682271644">
+    <state width="1506" height="67" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1587192505922" />
+    <state width="1506" height="67" key="GridCell.Tab.0.center" timestamp="1587192505922">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="87" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1586682271644" />
-    <state width="1506" height="87" key="GridCell.Tab.0.left" timestamp="1586682271644">
+    <state width="1506" height="67" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1587192505922" />
+    <state width="1506" height="67" key="GridCell.Tab.0.left" timestamp="1587192505922">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="87" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1586682271644" />
-    <state width="1506" height="87" key="GridCell.Tab.0.right" timestamp="1586682271644">
+    <state width="1506" height="67" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1587192505922" />
+    <state width="1506" height="67" key="GridCell.Tab.0.right" timestamp="1587192505922">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="87" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1586682271644" />
-    <state width="1506" height="87" key="GridCell.Tab.1.bottom" timestamp="1586682271644">
+    <state width="1506" height="67" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1587192505922" />
+    <state width="1506" height="28" key="GridCell.Tab.1.bottom" timestamp="1587192505893">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="87" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1586682271644" />
-    <state width="1506" height="87" key="GridCell.Tab.1.center" timestamp="1586682271644">
+    <state width="1506" height="28" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1587192505893" />
+    <state width="1506" height="28" key="GridCell.Tab.1.center" timestamp="1587192505892">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="87" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1586682271644" />
-    <state width="1506" height="87" key="GridCell.Tab.1.left" timestamp="1586682271644">
+    <state width="1506" height="28" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1587192505892" />
+    <state width="1506" height="28" key="GridCell.Tab.1.left" timestamp="1587192505892">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="87" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1586682271644" />
-    <state width="1506" height="87" key="GridCell.Tab.1.right" timestamp="1586682271644">
+    <state width="1506" height="28" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1587192505892" />
+    <state width="1506" height="28" key="GridCell.Tab.1.right" timestamp="1587192505892">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="87" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1586682271644" />
-    <state width="1506" height="150" key="GridCell.Tab.2.bottom" timestamp="1586681386820">
+    <state width="1506" height="28" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1587192505892" />
+    <state width="1506" height="28" key="GridCell.Tab.2.bottom" timestamp="1587192167703">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="150" key="GridCell.Tab.2.bottom/0.0.1549.831@0.0.1549.831" timestamp="1586681386820" />
-    <state width="1506" height="150" key="GridCell.Tab.2.center" timestamp="1586681386820">
+    <state width="1506" height="28" key="GridCell.Tab.2.bottom/0.0.1549.831@0.0.1549.831" timestamp="1587192167703" />
+    <state width="1506" height="28" key="GridCell.Tab.2.center" timestamp="1587192167703">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="150" key="GridCell.Tab.2.center/0.0.1549.831@0.0.1549.831" timestamp="1586681386820" />
-    <state width="1506" height="150" key="GridCell.Tab.2.left" timestamp="1586681386819">
+    <state width="1506" height="28" key="GridCell.Tab.2.center/0.0.1549.831@0.0.1549.831" timestamp="1587192167703" />
+    <state width="1506" height="28" key="GridCell.Tab.2.left" timestamp="1587192167703">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="150" key="GridCell.Tab.2.left/0.0.1549.831@0.0.1549.831" timestamp="1586681386819" />
-    <state width="1506" height="150" key="GridCell.Tab.2.right" timestamp="1586681386820">
+    <state width="1506" height="28" key="GridCell.Tab.2.left/0.0.1549.831@0.0.1549.831" timestamp="1587192167703" />
+    <state width="1506" height="28" key="GridCell.Tab.2.right" timestamp="1587192167703">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="150" key="GridCell.Tab.2.right/0.0.1549.831@0.0.1549.831" timestamp="1586681386820" />
+    <state width="1506" height="28" key="GridCell.Tab.2.right/0.0.1549.831@0.0.1549.831" timestamp="1587192167703" />
     <state x="284" y="0" key="SettingsEditor" timestamp="1586619323989">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
@@ -263,5 +245,16 @@
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="449" y="240" key="com.intellij.ide.util.TipDialog/0.0.1549.831@0.0.1549.831" timestamp="1586680785232" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/HomepageController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

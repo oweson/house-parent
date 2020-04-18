@@ -105,6 +105,7 @@ public class AgencyController {
     @RequestMapping("/agency/agencyDetail")
     public String agencyDetail(Integer id, ModelMap modelMap) {
         Agency agency = agencyService.getAgency(id);
+        // 热门房产
         List<House> houses = recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
         modelMap.put("recomHouses", houses);
         modelMap.put("agency", agency);

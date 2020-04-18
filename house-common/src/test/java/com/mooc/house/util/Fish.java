@@ -15,4 +15,5 @@ public class Fish {
     private String name;
     private Date createTime;
     private Date updateTime;
+    private Double price;
 }
