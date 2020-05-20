@@ -1,17 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ef4063f-4ded-4a18-b12c-842945247e45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/3230b8d008fdbc6d014e2dcbe2570250d34c7136" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/3230b8d008fdbc6d014e2dcbe2570250d34c7136" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="b5389610-e5c8-4423-8d0e-f1bae0904f7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/house-common/src/main/java/com/mooc/house/common/constants/HouseOrBlogType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/house-web/src/test/java/com/mooc/house/web/MathTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/051dc28518e410ed71aaa6dd985d7e58b7c98182" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/1818b3bddb0d578045057bcaf3305ed40ea1cbd3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/2/22e97fbf4ef2106f2f77621bcf6d89df6731bb1d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/239880e4afd8fa1ea74df420aff23f8b6d5b99ff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2fc962852ce7831e77891280f694c3e9d5bfdc40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/3230b8d008fdbc6d014e2dcbe2570250d34c7136" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/413e573a6b2d0747100be2da2eb148b4cc7ef0a0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/4543e517ec9388433c512fab96a4caaaed7b7db9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/52cca30bbfe137ee2064dbf8fa0855fdd3b532a3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/59c8e986bbbf8ab8febffbf511333e9e0d71a9da" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69105daa7740a0ff9f83b104d0449fa981a201e9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7fa6191c6fa5a4040cba56dae374b86136969912" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/82d99267415f3d152823fe9aff407aaa0cb4101d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/86720e8e00d3c549ac6797c0122b7dab4818567b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8aab7e6313f2e644403ab5edab9803eb080f7b6f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bb15a84721dd3ea312b637089f32752ab1f3a8fe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bde3ef7c6dcda8161c73df804a2fb9437277e6d0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8e08a743e27a429eb3b740e634a8dba53893c29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d6274d4096f72974916459838aacb27edf63bbb6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d990b91ae4309fae9d6123d9bbee26a2e96ca2ee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd01574bd5b676746d12a7267352ad15ba473af4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/resources/mapper/house.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/resources/mapper/house.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/src/test/java/com/mooc/house/util/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/test/java/com/mooc/house/util/Fish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/AgencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/AgencyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/HouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/HouseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-biz/target/classes/mapper/house.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/target/classes/mapper/house.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/HouseController.java" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/house-common/target/" />
+    <ignored path="$PROJECT_DIR$/house-web/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/house-biz/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,16 +55,112 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/CommentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/HouseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="168" column="32" selection-start-line="168" selection-start-column="32" selection-end-line="168" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/house-common/src/main/java/com/mooc/house/common/constants/HouseUserType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/RecommendService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/HouseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="170" column="28" lean-forward="true" selection-start-line="170" selection-start-column="28" selection-end-line="170" selection-end-column="28" />
+              <folding>
+                <element signature="e#4554#4555#0" expanded="true" />
+                <element signature="e#4617#4618#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/house-web/src/test/java/com/mooc/house/web/MathTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+              <folding>
+                <element signature="e#96#97#0" expanded="true" />
+                <element signature="e#148#149#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/mapper/HouseMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/house-biz/src/main/resources/mapper/house.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="129" column="4" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/house-common/src/main/java/com/mooc/house/common/constants/HouseOrBlogType.java" />
+        <option value="$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/HouseController.java" />
+        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/RecommendService.java" />
+        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/CommentService.java" />
+        <option value="$PROJECT_DIR$/house-web/src/test/java/com/mooc/house/web/MathTest.java" />
+        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/HouseService.java" />
+      </list>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -39,90 +170,262 @@
         <option name="userSettingsFile" value="D:\ITsoftware\maven\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-        <option name="vmOptionsForImporter" value="-Xmx768m" />
-      </MavenImportingSettings>
-    </option>
   </component>
-  <component name="MavenRunner">
-    <option name="jreName" value="1.8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="79" />
+    <option name="y" value="12" />
+    <option name="width" value="1748" />
+    <option name="height" value="993" />
   </component>
-  <component name="ProjectId" id="1aDcRE0M6NNzakiROKMv1ZJSJZA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="1571326587" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="1580274844" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="imgs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="imgs" type="462c0819:PsiDirectoryNode" />
+              <item name="1515227400" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="house" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="house" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="house" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="MyBatis LogindexNum" value="131" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RebelAgentSelection">
-    <selection>jr</selection>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\BaiduNetdiskDownload\A-2019\微服务--房产销售\source-code\housev1.0\doc" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Demo1Update">
-    <configuration name="Demo1Update" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mooc.house.util.Demo1Update" />
-      <module name="house-common" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+  <component name="RunManager" selected="Application.MathTest">
+    <configuration name="MathTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooc.house.web.MathTest" />
+      <module name="house-web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mooc.house.util.*" />
+          <option name="PATTERN" value="com.mooc.house.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuavaJoinTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mooc.house.biz.test.GuavaJoinTest" />
-      <module name="house-biz" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mooc.house.biz.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,19 +437,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Demo1Update" />
-        <item itemvalue="Application.GuavaJoinTest" />
+        <item itemvalue="Application.MathTest" />
       </list>
     </recent_temporary>
   </component>
@@ -155,106 +448,247 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2ef4063f-4ded-4a18-b12c-842945247e45" name="Default Changelist" comment="" />
-      <created>1580195177646</created>
+      <changelist id="b5389610-e5c8-4423-8d0e-f1bae0904f7a" name="Default Changelist" comment="" />
+      <created>1589898310990</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1580195177646</updated>
-      <workItem from="1580195181927" duration="3709000" />
-      <workItem from="1580300671025" duration="509000" />
-      <workItem from="1580374544760" duration="4853000" />
-      <workItem from="1584107098479" duration="1552000" />
-      <workItem from="1584169656977" duration="744000" />
-      <workItem from="1584891966925" duration="199000" />
-      <workItem from="1585017528758" duration="93000" />
-      <workItem from="1585384210997" duration="1674000" />
-      <workItem from="1586273596575" duration="332000" />
-      <workItem from="1586273997503" duration="325000" />
-      <workItem from="1586304184632" duration="46000" />
-      <workItem from="1586619169625" duration="1399000" />
-      <workItem from="1586680784055" duration="2173000" />
-      <workItem from="1587183687494" duration="3225000" />
+      <updated>1589898310990</updated>
+      <workItem from="1589898314087" duration="984000" />
+      <workItem from="1589986199305" duration="2733000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3717000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25315616" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959327" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29593268" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.30294532" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Analysis" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32959327" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="MyBatis Log" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="leetcode" order="4" side_tool="true" />
+      <window_info anchor="right" id="Word Book" order="5" side_tool="true" />
+      <window_info anchor="right" id="Json Parser" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="230" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586274221235">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state x="230" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1549.831@0.0.1549.831" timestamp="1586274221235" />
-    <state x="555" y="171" key="FileChooserDialogImpl" timestamp="1586619253814">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state x="555" y="171" key="FileChooserDialogImpl/0.0.1549.831@0.0.1549.831" timestamp="1586619253814" />
-    <state width="1506" height="67" key="GridCell.Tab.0.bottom" timestamp="1587192505922">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state width="1506" height="67" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1587192505922" />
-    <state width="1506" height="67" key="GridCell.Tab.0.center" timestamp="1587192505922">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state width="1506" height="67" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1587192505922" />
-    <state width="1506" height="67" key="GridCell.Tab.0.left" timestamp="1587192505922">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state width="1506" height="67" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1587192505922" />
-    <state width="1506" height="67" key="GridCell.Tab.0.right" timestamp="1587192505922">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state width="1506" height="67" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1587192505922" />
-    <state width="1506" height="28" key="GridCell.Tab.1.bottom" timestamp="1587192505893">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state width="1506" height="28" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1587192505893" />
-    <state width="1506" height="28" key="GridCell.Tab.1.center" timestamp="1587192505892">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state width="1506" height="28" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1587192505892" />
-    <state width="1506" height="28" key="GridCell.Tab.1.left" timestamp="1587192505892">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state width="1506" height="28" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1587192505892" />
-    <state width="1506" height="28" key="GridCell.Tab.1.right" timestamp="1587192505892">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state width="1506" height="28" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1587192505892" />
-    <state width="1506" height="28" key="GridCell.Tab.2.bottom" timestamp="1587192167703">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state width="1506" height="28" key="GridCell.Tab.2.bottom/0.0.1549.831@0.0.1549.831" timestamp="1587192167703" />
-    <state width="1506" height="28" key="GridCell.Tab.2.center" timestamp="1587192167703">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state width="1506" height="28" key="GridCell.Tab.2.center/0.0.1549.831@0.0.1549.831" timestamp="1587192167703" />
-    <state width="1506" height="28" key="GridCell.Tab.2.left" timestamp="1587192167703">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state width="1506" height="28" key="GridCell.Tab.2.left/0.0.1549.831@0.0.1549.831" timestamp="1587192167703" />
-    <state width="1506" height="28" key="GridCell.Tab.2.right" timestamp="1587192167703">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state width="1506" height="28" key="GridCell.Tab.2.right/0.0.1549.831@0.0.1549.831" timestamp="1587192167703" />
-    <state x="284" y="0" key="SettingsEditor" timestamp="1586619323989">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state x="284" y="0" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1586619323989" />
-    <state x="449" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1586680785232">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state x="449" y="240" key="com.intellij.ide.util.TipDialog/0.0.1549.831@0.0.1549.831" timestamp="1586680785232" />
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/1571326587/0a5e97d146aec0072549ed074d430128.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1580274844/2e69a82e05466cfb-970a1792f99e63a6-ca183a730a7ace860e1e3b765bcfeeab.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/resources/static/static/imgs/1515227400/member-01.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/UserHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-common/src/main/java/com/mooc/house/common/result/ResultMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/HomepageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/HouseApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="230">
+            <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/Errorhandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/mapper/CommentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-biz/src/main/resources/mapper/comment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/interceptor/UserContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-common/src/main/java/com/mooc/house/common/constants/HouseOrBlogType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/RecommendService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/test/java/com/mooc/house/web/MathTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding>
+            <element signature="e#96#97#0" expanded="true" />
+            <element signature="e#148#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/CommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-common/src/main/java/com/mooc/house/common/constants/HouseUserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/HouseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="168" column="32" selection-start-line="168" selection-start-column="32" selection-end-line="168" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/service/HouseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="170" column="28" lean-forward="true" selection-start-line="170" selection-start-column="28" selection-end-line="170" selection-end-column="28" />
+          <folding>
+            <element signature="e#4554#4555#0" expanded="true" />
+            <element signature="e#4617#4618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/mooc/house/biz/mapper/HouseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-biz/src/main/resources/mapper/house.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="129" column="4" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/house-web/src/main/java/com/mooc/house/web/controller/HomepageController.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

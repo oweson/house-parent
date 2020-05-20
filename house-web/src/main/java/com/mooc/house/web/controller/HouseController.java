@@ -114,7 +114,7 @@ public class HouseController {
     public String houseDetail(Long id, ModelMap modelMap) {
         House house = houseService.queryOneHouse(id);
         HouseUser houseUser = houseService.getHouseUser(id);
-        /**每点击一次就增加一次热度*/
+        /*每点击一次就增加一次热度*/
         recommendService.increase(id);
         List<Comment> comments = commentService.getHouseComments(id, 8);
         // 判断null情况避免NPE

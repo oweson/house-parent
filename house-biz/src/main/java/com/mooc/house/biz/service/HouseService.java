@@ -113,7 +113,8 @@ public class HouseService {
     }
 
     public void bindUser2House(Long houseId, Long userId, boolean collect) {
-        HouseUser existhouseUser = houseMapper.selectHouseUser(userId, houseId, collect ? HouseUserType.BOOKMARK.value : HouseUserType.SALE.value);
+        HouseUser existhouseUser = houseMapper.selectHouseUser(userId, houseId, collect ?
+                HouseUserType.BOOKMARK.value : HouseUserType.SALE.value);
         // 对应关系已经存在就不操作了；
         if (existhouseUser != null) {
             return;
@@ -156,7 +157,7 @@ public class HouseService {
     public void updateRating(Long id, Double rating) {
         House house = queryOneHouse(id);
         Double oldRating = house.getRating();
-        // 防止其他的用户不用ajax,非法请求，大于5就是非法的
+        // 防止其他的用户不用ajax,非法请求，大于5就是非法的,最多5分！！！
         Double newRating = oldRating.equals(0D) ? rating : Math.min((oldRating + rating) / 2, 5);
         House updateHouse = new House();
         updateHouse.setId(id);

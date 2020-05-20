@@ -68,7 +68,7 @@
         <include refid="houseField"/>
         from house a
         <include refid="houseCondition"></include>
-        <!--价格排序-->
+        <!--价格排序，升序和降序-->
         <choose>
             <when test="house.sort != null and house.sort == 'price_asc'">
                 order by a.price asc

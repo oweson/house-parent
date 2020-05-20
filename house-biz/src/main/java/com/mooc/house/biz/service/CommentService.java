@@ -1,8 +1,10 @@
 package com.mooc.house.biz.service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.mooc.house.common.constants.CommentTypeConstants;
+import com.mooc.house.common.constants.HouseOrBlogType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,12 +26,13 @@ public class CommentService {
 
     // 通用评论设计
     public void addHouseComment(Long houseId, String content, Long userId) {
-        addComment(houseId, null, content, userId, 1);
+        addComment(houseId, null, content, userId, HouseOrBlogType.BLOG_TYPE);
     }
 
     // todo 私有的方法会让事务不生效
+    // 房屋或者博客评论
     @Transactional(rollbackFor = Exception.class)
-    private void addComment(Long houseId, Integer blogId, String content, Long userId, int type) {
+    public void addComment(Long houseId, Integer blogId, String content, Long userId, int type) {
         Comment comment = new Comment();
         if (type == CommentTypeConstants.BLOG) {
             comment.setHouseId(houseId);
@@ -46,6 +49,10 @@ public class CommentService {
         commentMapper.insert(comment);
     }
 
+    /**
+     * 查看房屋的评论;
+     * 显示每个评论人的信息
+     */
     public List<Comment> getHouseComments(long houseId, int size) {
         List<Comment> comments = commentMapper.selectComments(houseId, size);
         comments.forEach(comment -> {
