@@ -25,6 +25,7 @@ public class WebMvcConf extends WebMvcConfigurerAdapter {
     public void addInterceptors(InterceptorRegistry registry) {
         /*拦截器按照顺序执行*/
         registry.addInterceptor(authInterceptor).excludePathPatterns("/static").addPathPatterns("/**");
+        // 用于添加拦截规则
         registry
                 .addInterceptor(authActionInterceptor).addPathPatterns("/house/toAdd")
                 .addPathPatterns("/accounts/profile").addPathPatterns("/accounts/profileSubmit")
